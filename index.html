@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar_left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo">
+            <ul class="navbar_menu">
+                <li>Home</li>
+                <li>TV Shows</li>
+                <li>Movies</li>
+                <li>Recently Added</li>
+                <li>My List</li>
+            </ul>
+        </div>
+        <div class="navbar_right">
+            <button class="nav_btn"><i class="fas fa-search"></i></button>
+            <button class="nav_btn">KIDS</button>
+            <button class="nav_btn"><i class="fas fa-bell"></i></button>
+            <div class="nav_profile">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="User Avatar" class="avatar">
+                <div class="dropdown_menu">
+                    <ul>
+                        <li>Account</li>
+                        <li>Help Center</li>
+                        <li>Sign Out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="main_header">
+            <h1>TV Shows</h1>
+            <div class="dropdown">
+                <button class="dropdown_btn">Genres</button>
+                <div class="dropdown_content">
+                    <a href="#">Action</a>
+                    <a href="#">Comedy</a>
+                    <a href="#">Drama</a>
+                    <!-- Aggiungi altri generi -->
+                </div>
+            </div>
+            <div class="layout_buttons">
+                <button class="layout_btn"></button>
+                <button class="layout_btn"></button>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Trending Now</h2>
+            <div class="row_posters">
+                <img class="row_poster" src="https://image.tmdb.org/t/p/original/path_to_your_image.jpg" alt="Movie Poster">
+                <img class="row_poster" src="https://image.tmdb.org/t/p/original/path_to_your_image.jpg" alt="Movie Poster">
+                <!-- Aggiungi altre immagini di film -->
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Watch It Again</h2>
+            <div class="row_posters">
+                <img class="row_poster" src="https://image.tmdb.org/t/p/original/path_to_your_image.jpg" alt="Movie Poster">
+                <img class="row_poster" src="https://image.tmdb.org/t/p/original/path_to_your_image.jpg" alt="Movie Poster">
+                <!-- Aggiungi altre immagini di film -->
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>New Releases</h2>
+            <div class="row_posters">
+                <img class="row_poster" src="https://image.tmdb.org/t/p/original/path_to_your_image.jpg" alt="Movie Poster">
+                <img class="row_poster" src="https://image.tmdb.org/t/p/original/path_to_your_image.jpg" alt="Movie Poster">
+                <!-- Aggiungi altre immagini di film -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Netflix, Inc.</p>
+        <p>Privacy · Terms · Contact Us</p>
+    </footer>
+</body>
+</html>
