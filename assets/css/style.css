@@ -5,36 +5,41 @@
 }
 
 body {
-    background-color: #111;
+    background-color: #141414;
     color: white;
     font-family: 'Arial', sans-serif;
 }
 
 .navbar {
+	
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: fixed;
+    
     width: 100%;
-    top: 0;
+   
     z-index: 1;
-    background-color: #111;
+    background-color: #141414;
+    color: white;
 }
 
 .logo {
     width: 80px;
+	margin-right: 20px;
 }
 
 .navbar_left {
     display: flex;
     align-items: center;
+	padding-left: 5%;
 }
 
 .navbar_menu {
     display: flex;
     list-style: none;
     margin-left: 20px;
+	margin-bottom: 0px;
 }
 
 .navbar_menu li {
@@ -88,66 +93,9 @@ body {
 }
 
 main {
-    padding-top: 80px;
+   
     padding-left: 20px;
     padding-right: 20px;
-}
-
-.main_header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown_btn {
-    background-color: #444;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.dropdown_content {
-    display: none;
-    position: absolute;
-    background-color: #444;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown_content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown_content a:hover {
-    background-color: #555;
-}
-
-.dropdown:hover .dropdown_content {
-    display: block;
-}
-
-.layout_buttons {
-    display: flex;
-}
-
-.layout_btn {
-    width: 20px;
-    height: 20px;
-    background-color: #555;
-    border: none;
-    margin-left: 5px;
-    cursor: pointer;
 }
 
 .row {
@@ -160,7 +108,6 @@ main {
 
 .row_posters {
     display: flex;
-    overflow-y: hidden;
     overflow-x: scroll;
     padding: 20px;
 }
@@ -175,7 +122,24 @@ main {
 .row_poster:hover {
     transform: scale(1.08);
 }
-
+.carousel-item img {
+	width: 100%;
+	height: auto;
+	margin-right: 0;
+}
+.carousel-inner {
+	display: flex;
+}
+.carousel-item {
+	display: flex;
+}
+.carousel-item img {
+	width: 100%;
+	height: auto;
+}
+.carousel-control-prev, .carousel-control-next {
+	filter: invert(100%);
+}
 .footer {
     background-color: #111;
     text-align: center;
@@ -185,4 +149,24 @@ main {
 
 .footer p {
     margin: 5px 0;
+}
+.footer a {
+    color: white !important;
+}
+
+.footer i {
+    color: white !important;
+}
+
+.btn {
+    color: white;
+}
+
+.layout_btn {
+    width: 20px;
+    height: 20px;
+    background-color: #555;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
 }
